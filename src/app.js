@@ -33,4 +33,14 @@ app.delete("/notes/:index",(req,res)=>{
 
 })
 
+//Pathc API
+app.patch("/notes/:index",(req,res)=>{
+    const index = req.params.index
+    const description = req.body.description
+    notes[index].description = description
+    res.status(200).json({
+        message:"description note updated succesfully"
+    })
+})
+
 module.exports = app;
