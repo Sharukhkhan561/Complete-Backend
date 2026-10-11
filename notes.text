@@ -1,0 +1,33 @@
+// Cluster
+==>its machine that will manage kitne CPU honge, kitni ram hogi, kitni storage hogi.
+
+==>cluster ke andr hum database create krte hai  
+==>network layer ke andr hum apni machine ka IP address rkhte hai.
+==>development ke time pr hum allow access anywhere select kr skte hai
+==> but production ke time pr humein current ip address from machine hi select krna hota hai.
+
+
+//Database layer
+==> user ko CRUD operation perform krne ke liye use hota hai.
+password: Zy6I29FsZmut14c3
+
+// mongoDB Compass
+-->cluster ke andr jo database hote hai un database ke data ko dekhne ke liye hum compass ka use krte hai
+mongodb+srv://srk:Zy6I29FsZmut14c3@cluster0.rv3nmgy.mongodb.net/
+
+-->mongoose ek package jise hum apne server ko database se connect krne ke liye use krte hai
+--> server ko database se connect krne ke liye seprate folder bnate hai db uske andr file hogi db.js
+==> db.js file ke andr bs hum server ko database se connect krne ka logic likhte hai .
+==> pr isko hum call krenge connect krne ke liye server.js file ke andr 
+**==> databse me data store krne ke liye hmein phle btana pdega data kis type ka hai is process ko schema khte hai
+==> schema ko hum model folder ke andr create krte hai
+
+//model
+==> database ke andr hum jo bhi operation perform krte hai wo models ki help se krte hai 
+
+//find iske bare me pdna hai 
+==> data always return in form of array of object
+==> agr koi data ni hoga toh empty array retur krega
+// findOne 
+==> always return  object 
+==> agr koi data ni hua toh null return krega
