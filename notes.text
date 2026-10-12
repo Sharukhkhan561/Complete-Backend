@@ -31,3 +31,17 @@ mongodb+srv://srk:Zy6I29FsZmut14c3@cluster0.rv3nmgy.mongodb.net/
 // findOne 
 ==> always return  object 
 ==> agr koi data ni hua toh null return krega
+
+//Cloud storage provider(imageKit)
+==> hum image ko server pr ya database pr store ni krte .
+==> image ko hum cloud storage provider pr store krte hai frr hmein wo url deta hai.
+==> URL ko hum database me store krte hai.
+
+// Collection 
+==> database ke andr jo data hota hai alg alg type ka data hota hai  use collection khte hai
+==> 
+
+==> jb data form-data form me aata hai tb hmein multer ka use krna pdta hai .
+==> jb hum file bhejte hai toh usko read krne ke liye multer ka use hota hai.
+==> jb hum req.file ko console krte hai toh buffer ke andr jo data aata hai whi image ka data hota hai.
+==> or ye buffer ko hi hum cloud storage provider pr upload krte hai.

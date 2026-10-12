@@ -1,6 +1,7 @@
 
 const express = require('express');
 const noteModel = require('./models/note.model')
+const multer = require('multer')
 
 const app = express(); 
 app.use(express.json()) //middleware its necessary for getting the data in request.body 
@@ -44,46 +45,51 @@ const notes=[];
 //     })
 // })
 
-// post api
-app.post('/notes',async (req,res)=>{
-    const data = req.body // {title, description}
-    await noteModel.create({
-        title: data.title,
-        description: data.description
-    })
-    res.status(201).json({
-        message: "Note Created"
-    })
-})
-// get api 
-app.get('/notes', async (req,res)=>{
-    const notes =await noteModel.find()
+// post api for database
+// app.post('/notes',async (req,res)=>{
+//     const data = req.body // {title, description}
+//     await noteModel.create({
+//         title: data.title,
+//         description: data.description
+//     })
+//     res.status(201).json({
+//         message: "Note Created"
+//     })
+// })
+// // get api for database
+// app.get('/notes', async (req,res)=>{
+//     const notes =await noteModel.find()
 
-    res.status(200).json({
-        message:"Notes fetch successfully",
-        notes:notes
-    })
-})
+//     res.status(200).json({
+//         message:"Notes fetch successfully",
+//         notes:notes
+//     })
+// })
 
-//delete api
-app.delete('/notes/:id', async (req,res)=>{
-    const id = req.params.id
+// //delete api for database
+// app.delete('/notes/:id', async (req,res)=>{
+//     const id = req.params.id
 
-    await noteModel.findOneAndDelete({
-        _id:id
-    })
-    res.status(200).json({
-        message: "Note deleted successfully"
-    })
-})
-//patch api
-app.patch('/notes/:id', async (req,res)=>{
-    const id = req.params.id
-    const description = req.body.description
+//     await noteModel.findOneAndDelete({
+//         _id:id
+//     })
+//     res.status(200).json({
+//         message: "Note deleted successfully"
+//     })
+// })
+// //patch api database
+// app.patch('/notes/:id', async (req,res)=>{
+//     const id = req.params.id
+//     const description = req.body.description
 
-    await noteModel.findOneAndUpdate({_id:id},{description: description})
-    res.status(200).json({
-        message:"Note Updated successfully"
-    })
+//     await noteModel.findOneAndUpdate({_id:id},{description: description})
+//     res.status(200).json({
+//         message:"Note Updated successfully"
+//     })
+// })
+const upload = multer({storage : multer.memoryStorage()})
+app.post('/create-post', upload.single("image"), async (req,res)=>{
+    console.log(req.body)
+    console.log(req.file)
 })
 module.exports = app;
