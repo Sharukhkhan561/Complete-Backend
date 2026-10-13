@@ -45,3 +45,8 @@ mongodb+srv://srk:Zy6I29FsZmut14c3@cluster0.rv3nmgy.mongodb.net/
 ==> jb hum file bhejte hai toh usko read krne ke liye multer ka use hota hai.
 ==> jb hum req.file ko console krte hai toh buffer ke andr jo data aata hai whi image ka data hota hai.
 ==> or ye buffer ko hi hum cloud storage provider pr upload krte hai.
+
+//services
+==> jb hmein pta ni hota ki hum konsa cloud storage provider use krna hai .
+==> toh us case me hum services ka folder bnakr usme storage ki file bnate hai.
+==> usme hum cloud storage provider (imageKit) ka code likhte hai 
