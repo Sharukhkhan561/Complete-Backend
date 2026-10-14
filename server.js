@@ -1,3 +1,4 @@
+require("dotenv").config();
 //server ko start krna server.js file ka kam hai
 const app = require("./src/app")
 const connectDB = require("./src/db/db")

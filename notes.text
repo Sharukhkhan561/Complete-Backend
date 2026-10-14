@@ -50,3 +50,13 @@ mongodb+srv://srk:Zy6I29FsZmut14c3@cluster0.rv3nmgy.mongodb.net/
 ==> jb hmein pta ni hota ki hum konsa cloud storage provider use krna hai .
 ==> toh us case me hum services ka folder bnakr usme storage ki file bnate hai.
 ==> usme hum cloud storage provider (imageKit) ka code likhte hai 
+
+//.env
+==> koi b (credentials) username , password, private key etc. hum env file me rkhte hai for security purpose.
+==>
+
+// postModel
+==> abhi tk hum imagefile ko upload kr chuke hai hmari imageKIt pr or uski URL mujhe mil gyi hai.
+==> next step me hum us URL ko apne database me save krnege.
+==>caption bhi database me save krnege
+
