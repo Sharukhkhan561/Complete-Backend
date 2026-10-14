@@ -60,3 +60,7 @@ mongodb+srv://srk:Zy6I29FsZmut14c3@cluster0.rv3nmgy.mongodb.net/
 ==> next step me hum us URL ko apne database me save krnege.
 ==>caption bhi database me save krnege
 
+// frontend
+==> react router dom ka use krnege for diffrent path for diffrent pages.
+==> ek page par form dikhayenge jha pr user post ko create kr skta hai .
+==> dusre page pr jitni bhi post create hui hai wo hmein dikhani hai.
