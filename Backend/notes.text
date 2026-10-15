@@ -62,5 +62,18 @@ mongodb+srv://srk:Zy6I29FsZmut14c3@cluster0.rv3nmgy.mongodb.net/
 
 // frontend
 ==> react router dom ka use krnege for diffrent path for diffrent pages.
-==> ek page par form dikhayenge jha pr user post ko create kr skta hai .
-==> dusre page pr jitni bhi post create hui hai wo hmein dikhani hai.
+==> ek page par form (create Post) dikhayenge jha pr user post ko create kr skta hai .
+==> dusre page pr jitni bhi post create hui hai wo hum dekh sakte hai.
+
+//frontend and backend integration
+==> axios ka use krnege bcz hmare database ke andr jo post ka data hai hmein wo render krana hai frontend par.
+==>jaise hi axios ki help se api call krte hai Cors error aa rha hai .
+==> due to frontend hmara diffrent origin pr chalta hai (localhost:5173) and backend (localhost:3000) diffrent oriign pr.
+==> is issue ko fix krne ke liye hum cors package ka use krte hai backend pr .
+
+//post api integration
+==> post api ko integrate kiya using axios.
+==> image upload ki or caption submit kiya form ke andr or ye gya API ke through  server par.
+==>server pr humne image ko upload kiya imageKit par or wha se jo hmein image ka url mila use humne save kiya database me.
+==> frr humne response bhej diya post create ho gyi jiski image ka url, caption , id hmein mil rhi hai.
+
