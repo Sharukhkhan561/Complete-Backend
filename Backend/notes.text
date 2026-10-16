@@ -77,3 +77,23 @@ mongodb+srv://srk:Zy6I29FsZmut14c3@cluster0.rv3nmgy.mongodb.net/
 ==>server pr humne image ko upload kiya imageKit par or wha se jo hmein image ka url mila use humne save kiya database me.
 ==> frr humne response bhej diya post create ho gyi jiski image ka url, caption , id hmein mil rhi hai.
 
+//Authentication
+==> four main step in Authentication Validation, Verification, Authentication, Authrization
+==>Validation
+==> jo data hmein mil rha hai us data ka format shi hai ya nhi . this is Validation.
+
+//Verification
+==> Jo data hmein mil rha hai wo data shi hai ya nhi us process ko check krne ko Verification khte hai.
+
+//Authentication
+==>jo b request server ke pass aa rhi hai wo kis user se aa rhi hai usko identify krna is process ko Authentication khte hai.
+
+//Authrization
+==>ek user ko kis kis chz ki permission hoti hai / ek user kya kya access kr skta hai is process ko Authrization khte hai.
+
+==>Authentication 2 types ki hoti hai .
+1. Session Based
+2. Token Based
+
+
+
