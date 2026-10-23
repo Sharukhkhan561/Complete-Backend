@@ -102,6 +102,10 @@ hum mostly token based Authentication use krte hai
 ==> API develop krnege taki user ko register kr ske.
 ==> register krne ke bd user ka data save krenge database mein.
 ==>database me save krne ke bd ek token create krenge wo token user ko denge.
+==> token user ko milega cookies storage k andr client side pr.
+==> uske bd jb b client(user) kuch b request krta hai toh token aata hai hmesha.
+==> token create kiya tha user ki help se toh usi wjh se hum user ka data read kr pate hai or bta skte hai
+==> ye request kis particular user ke papss se aayi hai.
 
 *==> Production level pr hum API ko routes folder ke andr define krte hai.
 1. login, register, reset password, forgot password ye sbhi routes hum auth routes ki file me create krte hai.
@@ -109,5 +113,12 @@ hum mostly token based Authentication use krte hai
 
 ==> jb bhi hum routes folder ke andr api define krte hai use access krne ke liye /api/auth ye prefix lagana zruri hai.
 ==> token create krne ke liye jsonwebtoken package ka use krte hai.
+
+//storage
+==> token ko hum response me ni behjte. use hum cookies me store krte hai.
+==> middleware use krte hai cookieparser jo hmara cookie use krne ke liye use hota hai express me.
+==>cookies ke andr hum jo b data rkhte hai server use pd skta hai or modify b kr skta hai.
+==>jo b data hum cookies pr save krenge wo data hr request ke sath browser pr wo data jayega hi jayega.
+==>
 
 

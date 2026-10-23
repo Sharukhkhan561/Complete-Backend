@@ -6,10 +6,13 @@ const uploadFile = require('./services/storage.service')
 const postModel = require('./models/post.model')
 const cors = require('cors')
 const authRoutes = require('./routes/auth.routes')
+const postRoutes = require('./routes/post.routes')
+const cookieParser = require('cookie-parser')
 
 const app = express(); 
 app.use(cors())
 app.use(express.json()) //middleware its necessary for getting the data in request.body 
+app.use(cookieParser()) // middleware its necessary for store token in cookies
 const notes=[];
 
 //Post API
@@ -120,4 +123,5 @@ const upload = multer({storage : multer.memoryStorage()})
 
 //register User API
 app.use('/api/auth', authRoutes)
+app.use('/api/posts',postRoutes)
 module.exports = app;
